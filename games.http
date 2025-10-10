@@ -1,0 +1,16 @@
+GET http://localhost:5148/games
+
+###
+GET http://localhost:5148/games/1
+
+###
+ POST http://localhost:5148/games
+ Content-Type: application/json
+
+ {
+    "name": "Walking dead",
+    "genre": "Fighting",
+    "price": 19.99,
+    "releaseDate": "1992-07-15"
+  }
+
