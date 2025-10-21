@@ -1,30 +1,30 @@
 GET http://localhost:5148/games
 
 ###
-GET http://localhost:5148/games/11
+GET http://localhost:5148/games/2
 
 ###
  POST http://localhost:5148/games
  Content-Type: application/json
 
  {
-    "name": "Walking dead",
-    "genre": "Fighting",
-    "price": 19.99,
-    "releaseDate": "1992-07-15"
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genreId": 1,
+    "price": 4.99,
+    "releaseDate": "2002-07-15"
 }
 
 ###
-PUT http://localhost:5148/games/12
+PUT http://localhost:5148/games/2
 Content-Type: application/json
 
 {
-    "id": 1,
-    "name": "Street Fighter Turbo",
-    "genre": "Fighting",
-    "price": 19.99,
-    "releaseDate": "1992-07-15"
+  "id": 2,
+  "name": "The Walking dead",
+  "genreId": 5,
+  "price": 29.99,
+  "releaseDate": "1992-07-15"
 }
 
 ###
-DELETE http://localhost:5148/games/3
+DELETE http://localhost:5148/games/2

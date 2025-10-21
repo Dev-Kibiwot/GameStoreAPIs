@@ -8,4 +8,6 @@ var connString = builder.Configuration.GetConnectionString("GameStore");
 builder.Services.AddSqlite<GameStoreContext>(connString);
 var app = builder.Build();
 app.MapGameEndpoints();
-app.Run();  
+app.MapGenreEndpoints();
+await app.MigrateDbAsync();
+app.Run();
